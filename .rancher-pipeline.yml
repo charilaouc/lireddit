@@ -1,0 +1,11 @@
+stages:
+- name: run
+  steps:
+  - runScriptConfig:
+      image: node:latest
+      shellScript: |-
+        cd server
+        npm i
+        npm start
+timeout: 60
+notification: {}
